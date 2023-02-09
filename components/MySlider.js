@@ -37,13 +37,13 @@ const MySlider = () => {
     <div className="relative">
       <div className="absolute top-1/2 z-30 -translate-y-1/2 w-full flex justify-between px-10">
         <button
-          className="md:bg-[url('/prev.svg')] md:block md:left-8 md:bg-no-repeat md:w-[50px] md:h-[100px]"
+          className="md:bg-[url('/prev.svg')] md:block md:relative md:left-8 md:bg-no-repeat md:w-[50px] md:h-[100px]"
           onClick={() => {
             sliderRef?.current?.slickPrev();
           }}
         ></button>
         <button
-          className="md:bg-[url('/next.svg')] md:block md:left-8 md:bg-no-repeat md:w-[50px] md:h-[100px] "
+          className="md:bg-[url('/next.svg')] md:block md:relative md:right-8 md:bg-no-repeat md:w-[50px] md:h-[100px] "
           onClick={() => {
             sliderRef?.current?.slickNext();
           }}
